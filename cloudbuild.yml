@@ -16,3 +16,5 @@ steps:
         "push",
         "northamerica-south1-docker.pkg.dev/microservicios-udemy-454719/image-registry/auth-ms",
       ]
+options:
+  logging: CLOUD_LOGGING_ONLY
