@@ -6,7 +6,7 @@ import { Logger, ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
 
-    const logger = new Logger("Auth-Microservice") 
+    const logger = new Logger("Auth-Microservice")
 
     const app = await NestFactory.createMicroservice<MicroserviceOptions>(
         AppModule,
@@ -29,6 +29,7 @@ async function bootstrap() {
             },
         }),
     );
+    console.log("Subiendo cambios para hacer CI/CD");
 
     logger.log(`products microservices running on http://localhost:${envs.PORT}`);
 
